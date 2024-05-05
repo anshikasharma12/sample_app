@@ -1,17 +1,20 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title><%= full_title(yield(:title)) %> </title>
-    <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width,initial-scale=1">
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
+<html> <head>
+<title><%= full_title(yield(:title)) %></title> <meta charset="utf-8">
+<%= csrf_meta_tags %>
+<%= csp_meta_tag %>
+<%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+<%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %> 
+<!--[if lt IE 9]>
+<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
+      </script>
+    <![endif]-->
+</head> <body>
+  <%= render 'layouts/header' %>
 
-    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
-
-  <body>
-    <%= yield %>
-  </body>
+<div class="container">
+<%= yield %> 
+<%= render 'layouts/footer' %>
+</div>
+</body>
 </html>

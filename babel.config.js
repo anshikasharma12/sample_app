@@ -80,3 +80,9 @@ module.exports = function(api) {
     ].filter(Boolean)
   }
 }
+module.exports = {
+  // ... other configurations ...
+  plugins: [
+    '@babel/plugin-proposal-private-methods'
+  ]
+};

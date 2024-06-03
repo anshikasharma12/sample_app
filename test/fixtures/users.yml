@@ -1,4 +1,3 @@
-# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 michael:
   name: Michael Example
   email: michael@example.com
@@ -6,20 +5,23 @@ michael:
   admin: true
   activated: true
   activated_at: <%= Time.zone.now %>
+
 archer:
   name: Sterling Archer
   email: duchess@example.gov
   password_digest: <%= User.digest('password') %>
   activated: true
   activated_at: <%= Time.zone.now %>
+
 lana:
-  name:  Lana Kane
+  name: Lana Kane
   email: hands@example.gov
   password_digest: <%= User.digest('password') %>
   activated: true
   activated_at: <%= Time.zone.now %>
+
 malory:
-  name:  Malory Archer 
+  name: Malory Archer 
   email: boss@example.gov
   password_digest: <%= User.digest('password') %>
   activated: true
